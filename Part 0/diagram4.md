@@ -1,7 +1,8 @@
+```mermaid
 sequenceDiagram
     participant browser
     participant server
-    
+
     browser->>server: POST https://fullstackopen-exampleapp.herokuapp/new_note
     activate server
     server->>browser: status code 302
@@ -26,3 +27,4 @@ sequenceDiagram
     activate server
     server-->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
     deactivate server
+```
